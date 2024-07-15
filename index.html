@@ -17,7 +17,7 @@
 
     
     <div class="form_img">
-        <form class="container" id="form">
+        <form class="col-lg-6" id="form">
         <div class="libe_cate">
         <div class="mb-3">
             <label for="libelle" class="form-label">Libellé</label>
@@ -25,17 +25,18 @@
           
 
         </div>
-        <div class="mb-3">
+        <div class="col-lg-8">
             <div>
-            <label for="">Catégorie</label>
-        </div>
+                <label for="">Catégorie</label>
+            </div>
             <select class="form-select" aria-label="Default select example" id="categorie">
                 <option selected>Choisir...</option>
-                <option value="1">Politique</option>
-                <option value="2">Sante</option>
-                <option value="3">Education</option>
-                <option value="4">Sport</option>
-                <option value="5">Environnement</option>
+                <option value="Politique">Politique</option>
+                <option value="Sante">Sante</option>
+                <option value="Education">Education</option>
+                <option value="Sport">Sport</option>
+                <option value="Environnement">Environnement</option>
+                <option value="Autres">Autres</option>
             </select>
             <span id="categorieError" class="error"></span>
         </div>
@@ -46,7 +47,7 @@
             
         </div>
 
-        <button type="submit" class="btn btn-primary">Ajouter</button>
+        <button type="submit" class="btn btn-primary" onclick="addIdee()">Ajouter</button>
 
         </form>
 
@@ -72,11 +73,12 @@
             </thead>
             <tbody>
               <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-                <td>Status</td>
+                <th scope="row"></th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
                 <td>
                     <button class="btn btn-primary">Approuvée</button>
                     <button class="btn btn-danger">Désapprouvée</button>
